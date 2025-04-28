@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "GetProducts";
+}
+
+<h1> Dữ Liệu lấy ra từ ViewBag </h1>
+<p> Mã sản phẩm: @ViewBag.product.ProductId</p>
+<p> Tên sản phẩm: @ViewBag.product.ProductName</p>
+<p> Năm sản xuất: @ViewBag.product.YearRelease</p>
+<p> Giá: @ViewBag.product.Price</p>
+
+<h2> Dữ liệu lấy ra từ ViewData</h2>
+@{
+    // Phải chuyển đổi về kiểu TtaProducts
+    var product = ViewData["productsVD"] as Ttalession02.Models.TtaProducts;
+}
+<p> Mã sản phẩm: @product.ProductId</p>
+<p> Tên sản phẩm: @product.ProductName</p>
+<p> Năm sản xuất: @product.YearRelease</p>
+<p> Giá: @product.Price</p>

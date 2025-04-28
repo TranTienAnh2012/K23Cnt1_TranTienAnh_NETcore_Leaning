@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ttalession02")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d7108dcf4549cb93801ff6cce9fa5a3fd6a5637")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+159b3f9e25c3f328ba45495da640b23c254d07f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ttalession02")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ttalession02")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
