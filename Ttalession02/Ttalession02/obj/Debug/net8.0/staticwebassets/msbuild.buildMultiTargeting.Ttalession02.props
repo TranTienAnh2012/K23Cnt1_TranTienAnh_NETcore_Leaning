@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Ttalession02.props" />
+</Project>
