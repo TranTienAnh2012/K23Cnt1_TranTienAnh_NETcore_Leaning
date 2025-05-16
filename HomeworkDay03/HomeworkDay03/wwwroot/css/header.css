@@ -1,0 +1,36 @@
+﻿/* Hover effect */
+.navbar-nav .nav-link {
+    transition: color 0.3s, border-bottom 0.3s;
+    position: relative;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #007bff; /* màu xanh khi hover */
+        text-decoration: none;
+    }
+
+    /* Gạch chân khi hover (dưới dạng line animation) */
+    .navbar-nav .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+        background-color: #007bff;
+        transition: width 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover::after {
+        width: 100%;
+    }
+
+    /* Active link (bạn có thể thêm class 'active' thủ công hoặc dùng logic Razor) */
+    .navbar-nav .nav-link.active {
+        color: #0d6efd;
+        font-weight: bold;
+    }
+
+        .navbar-nav .nav-link.active::after {
+            width: 100%;
+        }
