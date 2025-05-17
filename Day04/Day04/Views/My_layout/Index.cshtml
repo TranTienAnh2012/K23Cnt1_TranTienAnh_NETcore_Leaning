@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "My_layout";
+    ViewData["Title"] = "Index";
+
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+<h2>Popular book load từ bookcomponent</h2>
+@await Component.InvokeAsync("Book")
+<hr />

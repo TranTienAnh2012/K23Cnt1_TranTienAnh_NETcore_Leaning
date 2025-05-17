@@ -1,0 +1,62 @@
+﻿@model IEnumerable<Day04.Models.Book>
+@{
+    ViewData["Title"] = "TtaIndex";
+}
+
+<h1 class="mb-4">Danh Sách Các Cuốn Sách</h1>
+
+<!-- Form lọc sách -->
+<form method="post" class="row mb-4">
+    <div class="col-md-3">
+        <select name="AuthorId" class="form-select" asp-items="@ViewBag.authors">
+            <option value="">Chọn tác giả</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select name="GenreId" class="form-select" asp-items="@ViewBag.genres">
+            <option value="">Chọn thể loại</option>
+        </select>
+    </div>
+    <div class="col-md-6 d-flex align-items-center gap-2">
+        <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+        <a asp-action="TtaCreate" class="btn btn-danger">Thêm Mới</a>
+    </div>
+</form>
+
+
+<!-- Bảng danh sách sách -->
+<table class="table table-bordered table-hover align-middle">
+    <thead class="table-light">
+        <tr>
+            <th>Id</th>
+            <th>Tiêu Đề</th>
+            <th>Tác Giả</th>
+            <th>Thể Loại</th>
+            <th>Giá</th>
+            <th>Hình Ảnh</th>
+            <th>Hành Động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.AuthorId</td>
+                <td>@book.GenreId</td>
+                <td>@book.Price.ToString("N0") VND</td>
+                <td class="text-center">
+                    <img src="@Url.Content(book.Image)" alt="@book.Title"
+                         class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;" />
+                </td>
+                <td>
+                    <a asp-action="TtaEdit" asp-route-id="@book.Id" class="btn btn-sm btn-primary">Sửa</a>
+                    <form asp-action="TtaDelete" asp-route-id="@book.Id" method="post" style="display:inline-block;">
+                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa cuốn sách này?');">Xóa</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

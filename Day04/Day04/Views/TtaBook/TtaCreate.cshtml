@@ -1,0 +1,61 @@
+﻿@model Day04.Models.Book
+@{
+    ViewData["Title"] = "Thêm mới sách";
+}
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="TtaCreate" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label">Tên Sách</label>
+        <input asp-for="Title" class="form-control" placeholder="Tên Sách" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AuthorId" class="form-label">Tác giả</label>
+        <select asp-for="AuthorId" class="form-select" asp-items="ViewBag.authors">
+            <option value="">Chọn tác giả</option>
+        </select>
+        <span asp-validation-for="AuthorId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="GenreId" class="form-label">Thể loại</label>
+        <select asp-for="GenreId" class="form-select" asp-items="ViewBag.genres">
+            <option value="">Chọn thể loại</option>
+        </select>
+        <span asp-validation-for="GenreId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label">Giá sách</label>
+        <input asp-for="Price" class="form-control" placeholder="Giá sách" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TotalPage" class="form-label">Tổng số trang</label>
+        <input asp-for="TotalPage" class="form-control" placeholder="Tổng số trang" />
+        <span asp-validation-for="TotalPage" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Image" class="form-label">Hình ảnh / Poster</label>
+        <input asp-for="Image" type="text" class="form-control" placeholder="Đường dẫn hình ảnh" />
+        <span class="form-text">Nhập đường dẫn ảnh (ví dụ: ~/img/products/04.jpg)</span>
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Sumary" class="form-label">Giới thiệu ngắn</label>
+        <textarea asp-for="Sumary" class="form-control" rows="4" placeholder="Nội dung giới thiệu sách..."></textarea>
+        <span asp-validation-for="Sumary" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu lại</button>
+    <a asp-action="TtaIndex" class="btn btn-secondary ms-2">Hủy</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

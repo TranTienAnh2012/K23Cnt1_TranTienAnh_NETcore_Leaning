@@ -1,0 +1,29 @@
+﻿@{
+   
+    ViewData["Title"] = "Home Page";
+
+}
+
+<partial name="TtaBanner" />
+<hr />
+
+<!-- Nút bấm -->
+<button id="loadAjax" class="btn btn-sm btn-primary">
+    Click Load book từ PartialResult
+</button>
+<hr />
+
+<!-- Nội dung load từ partial view -->
+<div id="data-from-ajax" class="row">Loading Data.....</div>
+<hr />
+
+@section Scripts {
+    <script>
+        $('#loadAjax').click(function () {
+            $('#data-from-ajax').load("/TtaBook/PopularBook");
+        });
+    </script>
+
+}
+
+@*  @Html.RenderPartialAsync("TtaBanner") *@
