@@ -3,7 +3,7 @@
     ViewData["Title"] = "Chi Tiết Sản Phẩm";
     var Ctsanphams = ViewBag.SanPham as HomeworkDay03.Models.TtaSanPham;
 }
-
+<link href="~/css//giamgia.css" rel="stylesheet" />
 <div class="container mt-5">
     <h1 class="text-center mb-4 text-primary">Chi Tiết Sản Phẩm</h1>
 
@@ -18,7 +18,17 @@
             <!-- Cột thông tin sản phẩm -->
             <div class="col-md-8">
                 <h2 class="text-dark font-weight-bold mb-3">Tên sản phẩm: <span class="text-info">@Ctsanphams.NameSp</span></h2>
-                <h4 class="text-success mb-3">Giá: <span class="fw-bold">@Ctsanphams.Gia</span> VNĐ</h4>
+                <p class="card-text">
+                    @if (!string.IsNullOrEmpty(Ctsanphams.GiaKhuyenMai) && Ctsanphams.GiaKhuyenMai != Ctsanphams.Gia)
+                    {
+                        <span class="old-price">Giá: @Ctsanphams.Gia</span>
+                        <span class="new-price">Giá: @Ctsanphams.GiaKhuyenMai</span>
+                    }
+                    else
+                    {
+                        <span class="new-price">Giá: @Ctsanphams.Gia</span>
+                    }
+                </p>
                 <p><strong>Mô tả:</strong> @Ctsanphams.MoTa</p>
                 <p><strong>Trạng thái:</strong> <span class="badge bg-success text-light">@Ctsanphams.TrangThai</span></p>
                 <p><strong>Bio:</strong> @Ctsanphams.BioSp</p>
@@ -26,7 +36,7 @@
 
                 <!-- Nút quay lại -->
                 <div class="mt-4">
-                    <a asp-controller="SanPham" asp-action="TtaSanPham" class="btn btn-primary btn-lg">
+                    <a asp-controller="SanPham" asp-action="TtaSanPham" class="btn btn-danger btn-lg">
                         <i class="bi bi-arrow-left-circle"></i> Quay lại danh sách
                     </a>
                 </div>

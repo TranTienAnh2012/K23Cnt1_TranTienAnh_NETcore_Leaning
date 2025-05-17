@@ -1,8 +1,59 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link href="~/css/home.css" rel="stylesheet" />
+<div class="container mt-4">
+    <!-- Thông tin cá nhân -->
+@*     <ul class="list-group mb-4">
+        <li class="list-group-item">Họ và Tên: Trần Tiến Anh</li>
+        <li class="list-group-item">Lớp: K23CNT1</li>
+        <li class="list-group-item">Mã Sinh Viên: 2310900005</li>
+        <li class="list-group-item">Email: tienanhtran755@gmai.com</li>
+        <li class="list-group-item">Số Điện Thoại: 0387742492</li>
+    </ul> *@
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <!-- Slider ảnh -->
+    <div class="position-relative d-flex justify-content-center mb-4">
+        <div class ="slider-container position-relative shadow-lg rounded overflow-hidden" style="height: 400px; width: 80%;">
+            <img id="sliderImageCurrent" class="slide-image active" src="https://i.pinimg.com/736x/cb/f6/24/cbf6248c7fde06e7af2517efeedbf9a5.jpg"
+                 class="w-100 h-100 fade-image" style="object-fit: cover;" />
+            <img id="sliderImageNext" class="slide-image" />
+          
+        </div>
+        <!-- Nút chuyển ảnh -->
+        <button class="btn btn-dark position-absolute" style="top: 50%; left: 10px; transform: translateY(-50%);"
+                onclick="prevImage()">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+        <button class="btn btn-dark position-absolute" style="top: 50%; right: 10px; transform: translateY(-50%);"
+                onclick="nextImage()">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- New Book -->
+    <h3 class="ps-3">New Book</h3>
+    <div class="ps-5 d-flex flex-wrap">
+        @{
+            var bookImages = new[] {
+        "70ad7ff6f1679abdcb932594dde8f1f0",
+        "faa58de7bd06ee08fbd642efadcc6c03",
+        "1e2b2de936fe767ff7d6a24041358f92",
+        "cd04cc0220a8369daa01ca42df8b603b",
+        "853aff458ce4a29e3da6ba0505214dd9",
+        "a2e64811dd4eefd44a1a4a70cda6bde2",
+        "b9892e7dd93d753d6f912022a4b78e22"
+        };
+
+            foreach (var id in bookImages)
+            {
+                <img src="https://i.pinimg.com/474x/@(id.Substring(0,2))/@(id.Substring(2,2))/@(id.Substring(4,2))/@(id).jpg"
+                     alt="book" style="width: 150px; height: 150px; margin: 10px;" />
+            }
+        }
+    </div>
 </div>
+
+@section Scripts {
+    <script src="/js/home.js"></script>
+}

@@ -1,12 +1,13 @@
 ﻿@{
     ViewData["Title"] = "TtaSanPham";
     var accountsSp = ViewBag.accounts as List<TtaSanPham>;
+    
 }
-
+<link href="~/css/giamgia.css" rel="stylesheet" />
 <div class="container mt-4">
     <div class="row">
         <!-- Sidebar danh mục -->
-        <div class="col-md-3">
+        <div class="col-md-3" style="padding-top:59px">
             <div class="card" style="width: 100%;">
                 <div class="card-header bg-light text-dark font-weight-bold">
 					<h2>DANH MỤC</h2>
@@ -37,10 +38,21 @@
                                 <img src="@item.AvatarSp" class="card-img-top" alt="@item.NameSp">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">@item.NameSp</h5>
-                                    <p class="card-text">@item.BioSp</p>
+                                    <p class="card-text">
+                                        @if (!string.IsNullOrEmpty(item.GiaKhuyenMai) && item.GiaKhuyenMai != item.Gia)
+                                        {
+                                            <span class="old-price">Giá: @item.Gia</span>
+                                            <span class="new-price">Giá: @item.GiaKhuyenMai</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="new-price">Giá: @item.Gia</span>
+                                        }
+                                    </p>
+
                                     <!-- Sử dụng asp-route-id để tạo nút đúng -->
                                     <a asp-controller="SanPham" asp-action="TtaChiTietSanPham" asp-route-idsp="@item.IdSp" class="btn btn-success mt-auto">
-                                        Xem Chi Tiết
+										Xem Chi Tiết <i class="fa-solid fa-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>

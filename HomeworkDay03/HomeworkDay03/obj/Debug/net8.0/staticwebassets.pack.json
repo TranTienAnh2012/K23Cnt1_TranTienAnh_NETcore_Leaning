@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\HomeworkDay03.bundle.scp.css"
     },
     {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\giamgia.css",
+      "PackagePath": "staticwebassets\\css\\giamgia.css"
+    },
+    {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\header.css",
       "PackagePath": "staticwebassets\\css\\header.css"
+    },
+    {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\site.css",
@@ -59,6 +67,10 @@
     {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\img\\11.jpg",
       "PackagePath": "staticwebassets\\img\\11.jpg"
+    },
+    {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
     },
     {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\js\\site.js",

@@ -13,7 +13,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 1,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					 Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/04.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -24,7 +25,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 2,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/05.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -35,7 +37,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 3,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/06.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -46,7 +49,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 4,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					 Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/07.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -57,7 +61,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 5,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/08.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -68,7 +73,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 6,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+				   Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/09.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -87,22 +93,24 @@ namespace HomeworkDay03.Controllers
         public IActionResult TtaChiTietSanPham(int idsp)
         {
             List<TtaSanPham> sanPhams = new List<TtaSanPham>() {
-                new TtaSanPham()
+			  new TtaSanPham()
                 {
-                    IdSp = 1,
-                    NameSp = "Sach English B1",
-                    Gia = "300000",
+	                IdSp = 1,
+	                NameSp = "Sach English B1",
+	                Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
-                    AvatarSp = Url.Content("~/img/04.jpg"), // Updated image path
-                    TrangThai = "Tot",
-                    BioSp = "my name is small",
-                    NgayDang = new DateTime(2025, 10, 22),
+	                AvatarSp = Url.Content("~/img/04.jpg"),
+	                TrangThai = "Tot",
+	                BioSp = "my name is small",
+	                NgayDang = new DateTime(2025, 10, 22),
                 },
-                new TtaSanPham()
+				new TtaSanPham()
                 {
                     IdSp = 2,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					 Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/05.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -113,7 +121,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 3,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+				 Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/06.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -124,7 +133,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 4,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+			Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/07.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -135,7 +145,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 5,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					 Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/08.jpg"), // Updated image path
                     TrangThai = "Tot",
@@ -146,7 +157,8 @@ namespace HomeworkDay03.Controllers
                 {
                     IdSp = 6,
                     NameSp = "Sach English B1",
-                    Gia = "300000",
+					 Gia = "300000",           // Giá gốc
+                    GiaKhuyenMai = "250000", // Giá đã giảm
                     MoTa = "tot",
                     AvatarSp = Url.Content("~/img/09.jpg"), // Updated image path
                     TrangThai = "Tot",

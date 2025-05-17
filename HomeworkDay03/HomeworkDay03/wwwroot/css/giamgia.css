@@ -1,0 +1,10 @@
+﻿.old-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 8px;
+}
+
+.new-price {
+    color: #d9534f; /* đỏ nổi bật */
+    font-weight: bold;
+}

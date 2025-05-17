@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BHGx5qHQLlrThCqSB9dkNhBruTFtWYr7XuMiBTEEZXE=",
+  "Hash": "I7ao5G+0Jeyb8KHdNEKKyeXjMItXS4jt6Mb7tcKimvU=",
   "Source": "HomeworkDay03",
   "BasePath": "_content/HomeworkDay03",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HomeworkDay03.bundle.scp.css"
     },
     {
+      "Identity": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\giamgia.css",
+      "SourceId": "HomeworkDay03",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\",
+      "BasePath": "_content/HomeworkDay03",
+      "RelativePath": "css/giamgia.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\giamgia.css"
+    },
+    {
       "Identity": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\header.css",
       "SourceId": "HomeworkDay03",
       "SourceType": "Discovered",
@@ -72,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\header.css"
+    },
+    {
+      "Identity": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\home.css",
+      "SourceId": "HomeworkDay03",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\",
+      "BasePath": "_content/HomeworkDay03",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
       "Identity": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\css\\site.css",
@@ -319,6 +357,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\11.jpg"
+    },
+    {
+      "Identity": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\js\\home.js",
+      "SourceId": "HomeworkDay03",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\",
+      "BasePath": "_content/HomeworkDay03",
+      "RelativePath": "js/home.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\home.js"
     },
     {
       "Identity": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\HomeworkDay03\\HomeworkDay03\\wwwroot\\js\\site.js",
