@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "TtaGetMember";
+    var Ttamenber = ViewBag.member as TtaLesson05Model.Models.Datamodle.TtaMember;
+}
+
+
+<div class="alert alert-info">
+	<h1>Thông Tin MemBer</h1>
+    <hr/>
+
+<p>MenBer Id : @ViewBag.member.TtaMemberId</p>
+<p>Users Name : @ViewBag.member.TtaUsersName</p>
+<p>Full Name : @ViewBag.member.TtaFullName</p>
+<p>Password : @ViewBag.member.TtaPassword</p>
+<p>Email : @ViewBag.member.TtaEmail</p>
+</div>
