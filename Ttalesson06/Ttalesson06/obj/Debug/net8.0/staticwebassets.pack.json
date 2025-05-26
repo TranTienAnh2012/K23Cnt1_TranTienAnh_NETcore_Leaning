@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\Ttalesson06.bundle.scp.css"
     },
     {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\css\\banner.css",
+      "PackagePath": "staticwebassets\\css\\banner.css"
+    },
+    {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\css\\create.css",
       "PackagePath": "staticwebassets\\css\\create.css"
+    },
+    {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\css\\footer.css",
+      "PackagePath": "staticwebassets\\css\\footer.css"
     },
     {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\css\\heatder.css",
@@ -19,6 +27,22 @@
     {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\img\\ImgBaner\\01.jpg",
+      "PackagePath": "staticwebassets\\img\\ImgBaner\\01.jpg"
+    },
+    {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\img\\ImgBaner\\02.jpg",
+      "PackagePath": "staticwebassets\\img\\ImgBaner\\02.jpg"
+    },
+    {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\img\\ImgBaner\\03.jpg",
+      "PackagePath": "staticwebassets\\img\\ImgBaner\\03.jpg"
+    },
+    {
+      "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\img\\ImgBaner\\04.jpg",
+      "PackagePath": "staticwebassets\\img\\ImgBaner\\04.jpg"
     },
     {
       "Id": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\Ttalesson06\\Ttalesson06\\wwwroot\\js\\site.js",
