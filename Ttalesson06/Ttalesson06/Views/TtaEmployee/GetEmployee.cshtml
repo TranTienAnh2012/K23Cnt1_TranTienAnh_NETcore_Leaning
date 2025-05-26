@@ -1,0 +1,20 @@
+﻿@model Ttalesson06.Models.TtaEmployee
+
+@{
+    ViewData["Title"] = "Chi tiết học viên";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <tr><th>ID:</th><td>@Model.TtaId</td></tr>
+    <tr><th>Họ và tên:</th><td>@Model.TtaName</td></tr>
+    <tr><th>Ngày sinh:</th><td>@Model.TtaBirthDay.ToString("dd/MM/yyyy")</td></tr>
+    <tr><th>Email:</th><td>@Model.TtaEmail</td></tr>
+    <tr><th>Điện thoại:</th><td>@Model.TtaPhone</td></tr>
+    <tr><th>Học phí:</th><td>@Model.TtaSalary.ToString("N0")</td></tr>
+    <tr><th>Trạng thái:</th><td>@(Model.TtaStatus == 1 ? "Đang học" : "Đã nghỉ")</td></tr>
+</table>
+
+<a asp-action="TtaIndex" class="btn btn-secondary">Quay lại</a>
+    

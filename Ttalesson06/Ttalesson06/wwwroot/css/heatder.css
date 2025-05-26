@@ -1,0 +1,18 @@
+﻿.custom-navbar {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+
+    .custom-navbar .nav-link {
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+        .custom-navbar .nav-link:hover {
+            color: #0d6efd; /* Bootstrap primary */
+            font-weight: 500;
+        }
+
+    .custom-navbar .navbar-brand {
+        font-size: 20px;
+    }

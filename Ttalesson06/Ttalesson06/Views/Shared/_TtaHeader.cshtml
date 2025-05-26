@@ -1,0 +1,31 @@
+﻿@* Views/Shared/_TtaNavbar.cshtml *@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm custom-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-primary" asp-controller="TtaHome" asp-action="TtaIndex">
+            🧑‍🎓 Ttalesson06
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" asp-controller="TtaHome" asp-action="TtaIndex">🏠 Trang Chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="TtaHome" asp-action="TtaPrivacy">📋 Thông Tin SV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="TtaEmployee" asp-action="TtaIndex">📚 Danh Sách HV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="TtaEmployee" asp-action="TtaCreate">➕ Thêm Học Viên</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
