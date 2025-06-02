@@ -1,0 +1,61 @@
+﻿@model Ttalesson07.Models.TtaEmployee
+
+@{
+    ViewData["Title"] = "TtaDetails";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<h1>TtaDetails</h1>
+
+<div>
+    <h4>TtaEmployee</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaBirthDay)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaBirthDay)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaPhone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaPhone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaSalary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaSalary)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaStatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "TtaEdit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="TtaIndex">Back to List</a>
+</div>

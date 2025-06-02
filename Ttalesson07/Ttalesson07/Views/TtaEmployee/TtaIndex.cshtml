@@ -1,0 +1,80 @@
+﻿@model IEnumerable<Ttalesson07.Models.TtaEmployee>
+
+@{
+    ViewData["Title"] = "TtaIndex";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<h1>Danh Sach Nhan Vien</h1>
+
+<p>
+    <a asp-action="TtaCreate" class="btn btn-primary">Them Moi</a>
+</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaBirthDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaBirthDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaSalary)
+            </td>
+            <td>
+             @*    @Html.DisplayFor(modelItem => item.TtaStatus) *@
+                    @if (item.TtaStatus == 1)
+                    {
+                        <span class="badge text-bg-success">Hoat Dong</span>
+                    }
+                    else
+                    {
+                        <span class="badge text-bg-danger">khong hoat dong</span>
+                    }
+                </td>
+            <td>
+                    @Html.ActionLink("Edit", "TtaEdit", new { id = item.TtaId }) |
+                    @Html.ActionLink("Details", "TtaDetails", new { id = item.TtaId }) |
+                    @Html.ActionLink("Delete", "TtaDelete", new { id = item.TtaId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

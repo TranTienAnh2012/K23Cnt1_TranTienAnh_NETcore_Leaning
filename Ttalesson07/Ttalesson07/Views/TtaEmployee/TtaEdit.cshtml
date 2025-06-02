@@ -1,0 +1,61 @@
+﻿@model Ttalesson07.Models.TtaEmployee
+
+@{
+    ViewData["Title"] = "TtaEdit";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<h1>TtaEdit</h1>
+
+<h4>TtaEmployee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="TtaEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="TtaId" class="control-label"></label>
+                <input asp-for="TtaId" class="form-control" />
+                <span asp-validation-for="TtaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtaName" class="control-label"></label>
+                <input asp-for="TtaName" class="form-control" />
+                <span asp-validation-for="TtaName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtaBirthDay" class="control-label"></label>
+                <input asp-for="TtaBirthDay" class="form-control" />
+                <span asp-validation-for="TtaBirthDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtaEmail" class="control-label"></label>
+                <input asp-for="TtaEmail" class="form-control" />
+                <span asp-validation-for="TtaEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtaPhone" class="control-label"></label>
+                <input asp-for="TtaPhone" class="form-control" />
+                <span asp-validation-for="TtaPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtaSalary" class="control-label"></label>
+                <input asp-for="TtaSalary" class="form-control" />
+                <span asp-validation-for="TtaSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TtaStatus" class="control-label"></label>
+                <input asp-for="TtaStatus" class="form-control" />
+                <span asp-validation-for="TtaStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="TtaIndex">Back to List</a>
+</div>
+
