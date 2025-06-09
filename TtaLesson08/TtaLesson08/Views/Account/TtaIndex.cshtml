@@ -1,0 +1,90 @@
+﻿ @model IEnumerable<Ttalesson08.Models.TtaAccount>
+
+@{
+    ViewData["Title"] = "TtaIndex";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<h1>TtaIndex</h1>
+
+<p>
+    <a asp-action="TtaCreate">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaFulloName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaAvata)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaBirtday)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaPassWord)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TtaFacebook)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaFulloName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaAvata)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaBirtday)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaPassWord)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TtaFacebook)
+            </td>
+                <td>
+                    @Html.ActionLink("Edit", "TtaEdit", new { id = item.TtaId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.TtaId }) |
+                    @Html.ActionLink("Delete", "TtaDelete", new { id = item.TtaId })
+                </td>
+        </tr>
+}
+    </tbody>
+</table>
