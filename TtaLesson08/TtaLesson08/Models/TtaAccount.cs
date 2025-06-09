@@ -22,7 +22,7 @@ namespace Ttalesson08.Models
 
         [Display(Name = "Số Điện Thoại")]
         [DataType(DataType.PhoneNumber)]
-        [Remote(action: "VerifyPhone", controller: "Account")] // tên controller không có chữ "Controller" ở cuối
+        [Remote(action: "VerifyPhone", controller: "TtaAccount", ErrorMessage = "Số điện thoại không hợp lệ")]
         [Required(ErrorMessage = "Số điện thoại không được để trống")]
         public string TtaPhone { get; set; }
 

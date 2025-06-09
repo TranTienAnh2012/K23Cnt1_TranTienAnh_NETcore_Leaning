@@ -1,0 +1,39 @@
+﻿.navbar-nav .nav-item .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #007bff; /* Màu chữ khi hover */
+        transform: translateY(-3px); /* Hiệu ứng di chuyển */
+    }
+
+    /* Hiệu ứng underline gradient */
+    .navbar-nav .nav-item .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        width: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #007bff, #00d4ff);
+        border-radius: 10px;
+        transition: width 0.4s ease, left 0.4s ease;
+        transform: translateX(-50%);
+    }
+
+    .navbar-nav .nav-item .nav-link:hover::after {
+        width: 100%; /* Mở rộng đường underline */
+        left: 50%;
+    }
+
+    /* Thêm hiệu ứng shadow nhẹ */
+    .navbar-nav .nav-item .nav-link:hover {
+        box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    }

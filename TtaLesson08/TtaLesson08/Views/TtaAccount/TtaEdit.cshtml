@@ -1,0 +1,78 @@
+﻿@model Ttalesson08.Models.TtaAccount
+
+@{
+    ViewData["Title"] = "Edit Account";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<h1>Edit Account</h1>
+
+<form asp-action="TtaEdit" asp-route-id="@Model.TtaId" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <input asp-for="TtaId" type="hidden" />
+
+    <div class="form-group">
+        <label asp-for="TtaFulloName"></label>
+        <input asp-for="TtaFulloName" class="form-control" />
+        <span asp-validation-for="TtaFulloName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaEmail"></label>
+        <input asp-for="TtaEmail" class="form-control" />
+        <span asp-validation-for="TtaEmail" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaPhone"></label>
+        <input asp-for="TtaPhone" class="form-control" />
+        <span asp-validation-for="TtaPhone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaAddress"></label>
+        <input asp-for="TtaAddress" class="form-control" />
+        <span asp-validation-for="TtaAddress" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaAvata"></label>
+        <input asp-for="TtaAvata" class="form-control" />
+        <span asp-validation-for="TtaAvata" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaBirtday"></label>
+        <input asp-for="TtaBirtday" type="date" class="form-control" />
+        <span asp-validation-for="TtaBirtday" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaGender"></label>
+        <input asp-for="TtaGender" class="form-control" />
+        <span asp-validation-for="TtaGender" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaPassWord"></label>
+        <input asp-for="TtaPassWord" type="password" class="form-control" />
+        <span asp-validation-for="TtaPassWord" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TtaFacebook"></label>
+        <input asp-for="TtaFacebook" class="form-control" />
+        <span asp-validation-for="TtaFacebook" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<div>
+    <a asp-action="TtaIndex" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

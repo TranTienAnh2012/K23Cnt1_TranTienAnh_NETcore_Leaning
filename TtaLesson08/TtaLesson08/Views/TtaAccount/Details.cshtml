@@ -1,0 +1,79 @@
+﻿@model Ttalesson08.Models.TtaAccount
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TtaAccount</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaFulloName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaFulloName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaPhone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaPhone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaAddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaAddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaAvata)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaAvata)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaBirtday)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaBirtday)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaGender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaGender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaPassWord)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaPassWord)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TtaFacebook)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TtaFacebook)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="TtaIndex" class="btn btn-secondary">Back to List</a>
+</div>

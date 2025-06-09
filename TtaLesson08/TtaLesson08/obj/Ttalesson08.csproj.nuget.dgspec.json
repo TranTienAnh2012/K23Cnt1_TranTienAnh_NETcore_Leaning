@@ -8,10 +8,10 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\TtaLesson08\\Ttalesson08\\Ttalesson08.csproj",
-        "projectName": "TtaLesson08",
+        "projectName": "Ttalesson08",
         "projectPath": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\TtaLesson08\\Ttalesson08\\Ttalesson08.csproj",
         "packagesPath": "C:\\Users\\TRAN TIEN ANH\\.nuget\\packages\\",
-        "outputPath": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\TtaLesson08\\TtaLesson08\\obj\\",
+        "outputPath": "D:\\K23Cnt1_TranTienAnh_NETcore_Leaning\\TtaLesson08\\Ttalesson08\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TRAN TIEN ANH\\AppData\\Roaming\\NuGet\\NuGet.Config",

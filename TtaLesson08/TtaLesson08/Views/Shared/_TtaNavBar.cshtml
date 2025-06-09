@@ -1,17 +1,33 @@
-﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 custom-navbar">
     <div class="container-fluid">
-        <a class="navbar-brand" asp-area="" asp-controller="TtaHome" asp-action="Ttandex">Ttalesson08</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Logo bên trái -->
+        <a class="navbar-brand" asp-area="" asp-controller="TtaHome" asp-action="TtaIndex">
+            <i class="fas fa-graduation-cap"></i> Trần Tiến Anh
+        </a>
+
+        <!-- Nút toggle khi responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-            <ul class="navbar-nav flex-grow-1">
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaHome" asp-action="TtaIndex">Home</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaHome" asp-action="TtaIndex">
+                        <i class="fas fa-home"></i> Home
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaHome" asp-action="TtaPrivacy">Privacy</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaHome" asp-action="TtaPrivacy">
+                        <i class="fas fa-user-secret"></i> Privacy
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaAccount" asp-action="TtaIndex">
+                        <i class="fas fa-users"></i> Accounts
+                    </a>
                 </li>
             </ul>
         </div>

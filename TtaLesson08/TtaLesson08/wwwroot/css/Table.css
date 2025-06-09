@@ -1,0 +1,52 @@
+﻿/* Nút hành động nhỏ gọn */
+.table .btn {
+    padding: 3px 6px; /* Giảm padding để nút nhỏ hơn */
+    font-size: 12px; /* Kích thước font nhỏ hơn */
+    border-radius: 3px; /* Bo tròn nhẹ */
+    margin: 0 1px; /* Khoảng cách tối thiểu giữa các nút */
+    transition: all 0.2s ease; /* Hiệu ứng hover nhẹ */
+}
+
+.table .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+.table .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+.table .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.table .btn:hover {
+    transform: scale(1.03); /* Hiệu ứng phóng to rất nhẹ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Bóng nhẹ */
+}
+.table th {
+    background-color: #f8f9fa; /* Màu nền nhạt cho tiêu đề */
+    color: #343a40; /* Màu chữ đậm */
+    font-weight: bold; /* Chữ đậm */
+    text-align: center; /* Căn giữa nội dung */
+    padding: 8px 12px; /* Khoảng cách trong ô */
+    border: 1px solid #dee2e6; /* Viền mỏng */
+}
+
+    .table th:first-child {
+        border-top-left-radius: 5px; /* Bo tròn góc trên trái */
+    }
+
+    .table th:last-child {
+        border-top-right-radius: 5px; /* Bo tròn góc trên phải */
+    }
+
+    .table th:hover {
+        background-color: #e9ecef; /* Hiệu ứng hover nhẹ */
+        cursor: pointer; /* Hiển thị con trỏ khi hover */
+    }

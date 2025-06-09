@@ -26,24 +26,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\K23Cnt1_TranTienAnh_NETcore_Leaning\TtaLesson08\Ttalesson08
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Account/TtaCreate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUdGFDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Account/TtaDelete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUdGFEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Account/TtaEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUdGFFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Account/TtaIndex.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUdGFJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Shared/TtaBanner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFR0YUJhbm5lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Shared/_TtaFooter.cshtml]
@@ -56,6 +44,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/TtaAccount/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQWNjb3VudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/TtaAccount/TtaCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQWNjb3VudFxUdGFDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/TtaAccount/TtaDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQWNjb3VudFxUdGFEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/TtaAccount/TtaEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQWNjb3VudFxUdGFFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/TtaAccount/TtaIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQWNjb3VudFxUdGFJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/K23Cnt1_TranTienAnh_NETcore_Leaning/TtaLesson08/Ttalesson08/Views/TtaHome/TtaIndex.cshtml]

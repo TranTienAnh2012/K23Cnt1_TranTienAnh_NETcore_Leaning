@@ -1,0 +1,44 @@
+﻿/* Footer cơ bản */
+.footer {
+    border-top: 1px solid #ddd; /* Đường viền trên nhẹ */
+    background-color: #f8f9fa; /* Màu nền sáng */
+    padding: 20px 0; /* Khoảng cách trên dưới */
+    text-align: center; /* Căn giữa nội dung */
+
+}
+.font {
+    
+    margin-bottom: -70%;
+}
+    /* Link trong footer */
+    .footer-link {
+        color: #555; /* Màu chữ trung tính */
+        font-size: 14px; /* Kích thước vừa phải */
+        text-decoration: none; /* Bỏ gạch chân */
+        margin: 0 10px; /* Khoảng cách ngang giữa các liên kết */
+        transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+        color: #007bff; /* Đổi màu khi hover */
+    }
+
+/* Icon mạng xã hội */
+.footer-icon {
+    color: #555; /* Màu trung tính */
+    font-size: 30px; /* Kích thước vừa phải */
+    margin: 0 8px; /* Khoảng cách ngang giữa các biểu tượng */
+    transition: color 0.2s, transform 0.2s;
+}
+
+    .footer-icon:hover {
+        color: #007bff; /* Đổi màu khi hover */
+        transform: scale(1.1); /* Tăng nhẹ kích thước */
+    }
+
+/* Bản quyền */
+.footer p {
+    font-size: 12px; /* Kích thước nhỏ gọn */
+    color: #888; /* Màu chữ nhạt */
+    margin: 10px 0 0; /* Giảm khoảng cách phía trên */
+}

@@ -1,4 +1,4 @@
-﻿ @model IEnumerable<Ttalesson08.Models.TtaAccount>
+﻿@model IEnumerable<Ttalesson08.Models.TtaAccount>
 
 @{
     ViewData["Title"] = "TtaIndex";
@@ -8,9 +8,9 @@
 <h1>TtaIndex</h1>
 
 <p>
-    <a asp-action="TtaCreate">Create New</a>
+    <a asp-action="TtaCreate" class="btn btn-sm btn-primary">Create New</a>
 </p>
-<table class="table">
+<table class="table table-hover">
     <thead>
         <tr>
             <th>
@@ -80,9 +80,9 @@
                 @Html.DisplayFor(modelItem => item.TtaFacebook)
             </td>
                 <td>
-                    @Html.ActionLink("Edit", "TtaEdit", new { id = item.TtaId }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.TtaId }) |
-                    @Html.ActionLink("Delete", "TtaDelete", new { id = item.TtaId })
+                    @Html.ActionLink("Edit", "TtaEdit", new { id = item.TtaId }, new { @class = "btn btn-sm btn-primary" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.TtaId }, new { @class = "btn btn-sm btn-info" }) |
+                    @Html.ActionLink("Delete", "TtaDelete", new { id = item.TtaId }, new { @class = "btn btn-sm btn-danger" })
                 </td>
         </tr>
 }

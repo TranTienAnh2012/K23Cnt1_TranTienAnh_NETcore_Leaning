@@ -1,0 +1,57 @@
+﻿/* Container nút */
+.row {
+    gap: 15px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Tùy chỉnh nút */
+.custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Chiều rộng bằng nhau */
+    padding: 15px; /* Khoảng cách trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    text-align: center; /* Căn giữa nội dung */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border: none; /* Bỏ viền mặc định */
+    border-radius: 8px; /* Bo tròn góc */
+    transition: all 0.3s ease; /* Hiệu ứng hover */
+}
+
+    .custom-btn.btn-primary {
+        background: linear-gradient(45deg, #a8d8ea, #89c2d9); /* Pha màu xanh pastel */
+        color: #fff;
+    }
+
+    .custom-btn.btn-success {
+        background: linear-gradient(45deg, #c3e6cb, #a3d9b1); /* Pha màu xanh lá pastel */
+        color: #fff;
+    }
+
+    .custom-btn:hover {
+        transform: scale(1.05); /* Phóng to nhẹ */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng nổi */
+        opacity: 0.9; /* Hiệu ứng mờ nhẹ */
+    }
+
+/* Tùy chỉnh khoảng cách các nút */
+.col-md-4 {
+    gap: 10px; /* Khoảng cách giữa các nút */
+    display: flex;
+    flex-direction: column; /* Đặt các nút theo chiều dọc */
+}
+
+/* Welcome text */
+.welcome-text {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #007bff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+    .welcome-text:hover {
+        transform: scale(1.1);
+        color: #ff6f61;
+    }

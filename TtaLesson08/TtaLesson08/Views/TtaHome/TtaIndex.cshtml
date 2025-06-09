@@ -1,8 +1,28 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<div class="container mt-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 welcome-animation welcome-text">Welcome Trang Chủ <br /> Trần Tiến Anh</h1>
+        <partial name="TtaBanner" />
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-4 d-flex flex-column align-items-center">
+            <!-- Nút 1 -->
+            <a class="custom-btn btn-primary mb-3 w-100" asp-area="" asp-controller="TtaAccount" asp-action="TtaIndex">
+                <i class="fas fa-users"></i> TtaAccount Index
+            </a>
+            <!-- Nút 2 -->
+            <a class="custom-btn btn-success w-100" asp-area="" asp-controller="TtaAccount" asp-action="Details">
+                <i class="fas fa-user-circle"></i> Account Details
+            </a>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <p>
+            Learn about
+            <a href="https://learn.microsoft.com/aspnet/core" target="_blank" class="text-info">
+                building Web apps with ASP.NET Core
+            </a>.
+        </p>
+    </div>
 </div>

@@ -1,0 +1,54 @@
+﻿/* Căn chỉnh tiêu đề */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hình ảnh */
+img {
+    border-radius: 8px; /* Bo tròn các góc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Thông tin sinh viên */
+.col-md-8 h2, .col-md-8 h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333; /* Màu chữ trung tính */
+}
+
+/* Nút trở về */
+.btn-success {
+    background-color: #a8dadc; /* Màu pastel xanh nhạt */
+    border: none; /* Loại bỏ viền */
+    color: #1d3557; /* Màu chữ đậm hơn để dễ đọc */
+    font-size: 16px;
+    padding: 10px 20px; /* Khoảng cách trong nút */
+    border-radius: 5px; /* Bo góc mềm mại */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-success:hover {
+        background-color: #457b9d; /* Tông đậm hơn khi hover */
+        color: #ffffff; /* Chữ trắng khi hover */
+        transform: scale(1.05); /* Hiệu ứng phóng to nhẹ */
+    }
+
+/* Căn chỉnh nội dung */
+.row {
+    margin-top: 30px; /* Thêm khoảng cách trên */
+}
+
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-8 {
+    padding-left: 20px;
+    line-height: 1.6;
+}
