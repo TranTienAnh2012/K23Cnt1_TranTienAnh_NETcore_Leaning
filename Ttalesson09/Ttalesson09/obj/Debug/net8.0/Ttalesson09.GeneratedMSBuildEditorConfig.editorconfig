@@ -70,20 +70,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhSG9tZVxUdGFJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xDcmVhdGUuY3NodG1s
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/TtaCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xUdGFDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xEZWxldGUuY3NodG1s
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/TtaDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xUdGFEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xEZXRhaWxzLmNzaHRtbA==
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/TtaDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xUdGFEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xFZGl0LmNzaHRtbA==
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/TtaEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhUHVibGlzaGVyc1xUdGFFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaPublishers/TtaIndex.cshtml]

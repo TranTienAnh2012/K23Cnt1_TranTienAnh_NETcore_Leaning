@@ -22,6 +22,7 @@
     <thead>
         <tr>
             <th>STT</th> <!-- Hiển thị số thứ tự -->
+            <th>@Html.DisplayNameFor(model => model.First().CategoryId)</th>
             <th>@Html.DisplayNameFor(model => model.First().CategoryName)</th>
             <th class="text-center">Actions</th>
         </tr>
@@ -33,6 +34,7 @@
             {
                 <tr>
                     <td>@stt</td>
+                    <td>@Html.DisplayFor(modelItem => item.CategoryId)</td>
                     <td>@Html.DisplayFor(modelItem => item.CategoryName)</td>
                     <td class="text-center">
                         <a asp-action="TtaEdit" asp-route-TtaId="@item.CategoryId" class="btn btn-primary btn-sm">Edit</a>

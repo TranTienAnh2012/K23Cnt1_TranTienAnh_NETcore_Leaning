@@ -19,21 +19,30 @@ namespace Ttalesson09.Controllers
         }
 
         // GET: TtaPublishers
-        public async Task<IActionResult> TtaIndex()
+       // GET: TtaPublishers
+    public async Task<IActionResult> TtaIndex(string keywordPub)
+    {
+        var publishers = _context.Publishers.AsQueryable();
+
+        if (!string.IsNullOrEmpty(keywordPub))
         {
-            return View(await _context.Publishers.ToListAsync());
+            publishers = publishers.Where(p => p.PublisherName.Contains(keywordPub));
         }
 
+        return View(await publishers.ToListAsync());
+    }
+
+
         // GET: TtaPublishers/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> TtaDetails(int? TtaId)
         {
-            if (id == null)
+            if (TtaId == null)
             {
                 return NotFound();
             }
 
             var publisher = await _context.Publishers
-                .FirstOrDefaultAsync(m => m.PublisherId == id);
+                .FirstOrDefaultAsync(m => m.PublisherId == TtaId);
             if (publisher == null)
             {
                 return NotFound();
@@ -43,7 +52,7 @@ namespace Ttalesson09.Controllers
         }
 
         // GET: TtaPublishers/Create
-        public IActionResult Create()
+        public IActionResult TtaCreate()
         {
             return View();
         }
@@ -53,26 +62,26 @@ namespace Ttalesson09.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PublisherId,PublisherName,Phone,Address")] Publisher publisher)
+        public async Task<IActionResult> TtaCreate([Bind("PublisherId,PublisherName,Phone,Address")] Publisher publisher)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(publisher);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(TtaIndex));
             }
             return View(publisher);
         }
 
         // GET: TtaPublishers/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> TtaEdit(int? TtaId)
         {
-            if (id == null)
+            if (TtaId == null)
             {
                 return NotFound();
             }
 
-            var publisher = await _context.Publishers.FindAsync(id);
+            var publisher = await _context.Publishers.FindAsync(TtaId);
             if (publisher == null)
             {
                 return NotFound();
@@ -85,9 +94,9 @@ namespace Ttalesson09.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PublisherId,PublisherName,Phone,Address")] Publisher publisher)
+        public async Task<IActionResult> TtaEdit(int TtaId, [Bind("PublisherId,PublisherName,Phone,Address")] Publisher publisher)
         {
-            if (id != publisher.PublisherId)
+            if (TtaId != publisher.PublisherId)
             {
                 return NotFound();
             }
@@ -110,21 +119,21 @@ namespace Ttalesson09.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(TtaIndex));
             }
             return View(publisher);
         }
 
         // GET: TtaPublishers/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> TtaDelete(int? TtaId)
         {
-            if (id == null)
+            if (TtaId == null)
             {
                 return NotFound();
             }
 
             var publisher = await _context.Publishers
-                .FirstOrDefaultAsync(m => m.PublisherId == id);
+                .FirstOrDefaultAsync(m => m.PublisherId == TtaId);
             if (publisher == null)
             {
                 return NotFound();
@@ -134,23 +143,23 @@ namespace Ttalesson09.Controllers
         }
 
         // POST: TtaPublishers/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("TtaDelete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> TtaDeleteConfirmed(int TtaId)
         {
-            var publisher = await _context.Publishers.FindAsync(id);
+            var publisher = await _context.Publishers.FindAsync(TtaId);
             if (publisher != null)
             {
                 _context.Publishers.Remove(publisher);
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(TtaIndex));
         }
 
-        private bool PublisherExists(int id)
+        private bool PublisherExists(int TtaId)
         {
-            return _context.Publishers.Any(e => e.PublisherId == id);
+            return _context.Publishers.Any(e => e.PublisherId == TtaId);
         }
     }
 }

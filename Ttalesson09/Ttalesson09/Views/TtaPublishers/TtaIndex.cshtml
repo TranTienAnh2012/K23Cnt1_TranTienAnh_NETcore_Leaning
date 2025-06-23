@@ -7,10 +7,16 @@
 
 <h1>Index</h1>
 
+<form asp-action="TtaIndex" method="get" class="mb-3">
+    <div class="d-flex flex-row-reverse">
+        <input type="text" name="keywordPub" class="form-control w-25 ms-2" placeholder="Tìm thể loại..." value="@Context.Request.Query["keywordPub"]" />
+        <button type="submit" class="btn btn-primary btn-sm">Tìm kiếm</button>
+    </div>
+</form>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="TtaCreate" class="btn btn-success btn-sm">Create New</a>
 </p>
-<table class="table">
+<table class="table  table-bordered table-striped table-hover">
     <thead>
         <tr>
             <th>
@@ -22,7 +28,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Address)
             </th>
-            <th></th>
+            <th class="text-center"> Hoat Dong</th>
         </tr>
     </thead>
     <tbody>
@@ -37,12 +43,17 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PublisherId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PublisherId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PublisherId">Delete</a>
+            <td class="text-center">
+                    <a asp-action="TtaEdit" asp-route-TtaId="@item.PublisherId" class="btn btn-primary btn-sm" >Edit</a>
+                    <a asp-action="TtaDetails" asp-route-TtaId="@item.PublisherId" class="btn btn-info btn-sm">Details</a>
+                    <a asp-action="TtaDelete" asp-route-TtaId="@item.PublisherId" class="btn btn-warning btn-sm">Delete</a>
             </td>
         </tr>
 }
     </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="3">Tổng số: @Model.Count()</th>
+        </tr>
+    </tfoot>
 </table>

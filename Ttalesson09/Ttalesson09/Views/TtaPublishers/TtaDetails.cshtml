@@ -1,0 +1,46 @@
+﻿@model Ttalesson09.Models.Publisher
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+
+            <div class="card-body">
+                <div class="form-group my-1">
+                    <label class="control-label">@Html.DisplayNameFor(model => model.PublisherName)</label>
+                    <div class="form-control-plaintext">
+                        @Html.DisplayFor(model => model.PublisherName)
+                    </div>
+                </div>
+
+                <div class="form-group my-1">
+                    <label class="control-label">@Html.DisplayNameFor(model => model.Phone)</label>
+                    <div class="form-control-plaintext">
+                        @Html.DisplayFor(model => model.Phone)
+                    </div>
+                </div>
+
+                <div class="form-group my-1">
+                    <label class="control-label">@Html.DisplayNameFor(model => model.Address)</label>
+                    <div class="form-control-plaintext">
+                        @Html.DisplayFor(model => model.Address)
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-footer">
+                <div class="form-group">
+                    <a asp-action="TtaEdit" asp-route-TtaId="@Model?.PublisherId" class="btn btn-primary">Edit</a>
+                    <a asp-action="TtaIndex" class="btn btn-secondary">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
