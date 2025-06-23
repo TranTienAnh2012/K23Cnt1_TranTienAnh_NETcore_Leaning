@@ -42,20 +42,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/TtaCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xUdGFDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/TtaDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xUdGFEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/TtaDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xUdGFEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+[D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/TtaEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHRhQ2F0ZWdvcmllc1xUdGFFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/K23Cnt1_TranTienAnh_NETcore_Leaning/Ttalesson09/Ttalesson09/Views/TtaCategories/TtaIndex.cshtml]

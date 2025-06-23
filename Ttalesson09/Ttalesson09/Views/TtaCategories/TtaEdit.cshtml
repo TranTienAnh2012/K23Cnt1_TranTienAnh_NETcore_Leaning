@@ -1,0 +1,41 @@
+﻿@model Ttalesson09.Models.Category
+
+@{
+    ViewData["Title"] = "Sua thong tin danh muc loai";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="TtaEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="CategoryId" />
+
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="my-2">@ViewData["Title"]</h1>
+                </div>
+                <div class="card-body">
+                    <div class="form-group my-1">
+                        <label asp-for="CategoryName" class="control-label"></label>
+                        <input asp-for="CategoryName" class="form-control" />
+                        <span asp-validation-for="CategoryName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="form-group my-2" >
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                        <a asp-action="TtaIndex" class="btn btn-secondary">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

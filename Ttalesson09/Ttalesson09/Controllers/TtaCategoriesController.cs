@@ -19,13 +19,21 @@ namespace Ttalesson09.Controllers
         }
 
         // GET: TtaCategories
-        public async Task<IActionResult> TtaIndex()
+        public async Task<IActionResult> TtaIndex(string keyword)
         {
-            return View(await _context.Categories.ToListAsync());
+            var categories = _context.Categories.AsQueryable();
+
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                categories = categories.Where(c => c.CategoryName.Contains(keyword));
+            }
+
+            return View(await categories.OrderBy(c => c.CategoryId).ToListAsync());
         }
 
+
         // GET: TtaCategories/Details/5
-        public async Task<IActionResult> Details(int? TtaId)
+        public async Task<IActionResult> TtaDetails(int? TtaId)
         {
             if (TtaId == null)
             {
@@ -43,7 +51,7 @@ namespace Ttalesson09.Controllers
         }
 
         // GET: TtaCategories/Create
-        public IActionResult Create()
+        public IActionResult TtaCreate()
         {
             return View();
         }
@@ -53,7 +61,7 @@ namespace Ttalesson09.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CategoryId,CategoryName")] Category category)
+        public async Task<IActionResult> TtaCreate([Bind("CategoryId,CategoryName")] Category category)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +73,7 @@ namespace Ttalesson09.Controllers
         }
 
         // GET: TtaCategories/Edit/5
-        public async Task<IActionResult> Edit(int? TtaId)
+        public async Task<IActionResult> TtaEdit(int? TtaId)
         {
             if (TtaId == null)
             {
@@ -85,7 +93,7 @@ namespace Ttalesson09.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int TtaId, [Bind("CategoryId,CategoryName")] Category category)
+        public async Task<IActionResult> TtaEdit(int TtaId, [Bind("CategoryId,CategoryName")] Category category)
         {
             if (TtaId != category.CategoryId)
             {
@@ -116,7 +124,7 @@ namespace Ttalesson09.Controllers
         }
 
         // GET: TtaCategories/Delete/5
-        public async Task<IActionResult> Delete(int? TtaId)
+        public async Task<IActionResult> TtaDelete(int? TtaId)
         {
             if (TtaId == null)
             {
@@ -134,9 +142,9 @@ namespace Ttalesson09.Controllers
         }
 
         // POST: TtaCategories/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("TtaDelete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int TtaId)
+        public async Task<IActionResult> TtaDeleteConfirmed(int TtaId)
         {
             var category = await _context.Categories.FindAsync(TtaId);
             if (category != null)
