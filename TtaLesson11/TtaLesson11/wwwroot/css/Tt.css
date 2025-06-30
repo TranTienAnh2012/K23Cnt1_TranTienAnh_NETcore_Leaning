@@ -1,0 +1,39 @@
+﻿#profile-info {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInSlide 1s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.5s;
+}
+
+    #profile-info h2,
+    #profile-info h3 {
+        color: #343a40;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+        #profile-info h2:first-of-type {
+            color: #198754; /* xanh lá cho điểm nhấn */
+            font-weight: bold;
+        }
+
+    #profile-info a.btn {
+        transition: transform 0.3s ease, background-color 0.3s;
+    }
+
+        #profile-info a.btn:hover {
+            transform: scale(1.05);
+            background-color: #157347; /* xanh lá đậm hơn khi hover */
+        }
+
+/* Animation */
+@keyframes fadeInSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

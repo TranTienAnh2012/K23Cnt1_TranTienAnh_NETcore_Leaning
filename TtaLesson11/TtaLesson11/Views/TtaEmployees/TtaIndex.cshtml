@@ -1,0 +1,64 @@
+﻿@model IEnumerable<TtaLesson11.Models.TtaEmployee>
+
+@{
+    ViewData["Title"] = "Danh Sách Nhân Viên";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<h1 class="text-center">@ViewData["Title"]</h1>
+
+<!-- Tìm kiếm -->
+@* <form asp-action="TtaIndex" method="get" class="mb-3">
+    <div class="d-flex flex-row-reverse">
+        <input type="text" name="keyword" class="form-control w-25 ms-2" placeholder="Tìm tên nhân viên..." value="@Context.Request.Query["keyword"]" />
+        <button type="submit" class="btn btn-primary">Tìm kiếm <i class="bi bi-search"></i></button>
+    </div>
+</form> *@
+
+<!-- Thêm mới -->
+<p>
+    <a asp-action="TtaCreate" class="btn btn-success">Thêm Mới <i class="bi bi-plus-square"></i></a>
+</p>
+
+<!-- Bảng danh sách -->
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>STT</th>
+            <th>@Html.DisplayNameFor(model => model.First().TtaEmpName)</th>
+            <th>@Html.DisplayNameFor(model => model.First().TtaEmpLevel)</th>
+            <th>@Html.DisplayNameFor(model => model.First().TtaEmpStartDate)</th>
+            <th>@Html.DisplayNameFor(model => model.First().TtaEmpStatus)</th>
+            <th class="text-center">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int stt = 1;
+            foreach (var item in Model.OrderBy(e => e.TtaEmpName))
+            {
+                <tr>
+                    <td>@stt</td>
+                    <td>@item.TtaEmpName</td>
+                    <td>@item.TtaEmpLevel</td>
+                    <td>@(item.TtaEmpStartDate?.ToString("dd/MM/yyyy"))</td>
+                    <td>
+                        @(item.TtaEmpStatus == true ? "Show" : "Hide")
+                    </td>
+
+                    <td class="text-center">
+                        <a asp-action="TtaEdit" asp-route-TtaId="@item.TtaEmpId" class="btn btn-primary btn-sm" title="Sửa"><i class="bi bi-pencil-square"></i></a>
+                        <a asp-action="TtaDetails" asp-route-TtaId="@item.TtaEmpId" class="btn btn-info btn-sm" title="Chi tiết"><i class="bi bi-eye"></i></a>
+                        <a asp-action="TtaDelete" asp-route-TtaId="@item.TtaEmpId" class="btn btn-danger btn-sm" title="Xoá"><i class="bi bi-trash-fill"></i></a>
+                    </td>
+                </tr>
+                stt++;
+            }
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6">Tổng số: @Model.Count()</td>
+        </tr>
+    </tfoot>
+</table>

@@ -1,0 +1,28 @@
+﻿<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom shadow-sm mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2 text-dark"
+           asp-area="" asp-controller="TtaHome" asp-action="TtaIndex">
+            <i class="bi bi-journal-bookmark" style="font-size: 1.5rem;"></i>
+            Tran Tien Anh
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaHome" asp-action="TtaIndex">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaHome" asp-action="TtaPrivacy">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="TtaEmployees" asp-action="TtaIndex">TtaEmployee</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

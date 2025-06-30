@@ -1,0 +1,40 @@
+﻿@model TtaLesson11.Models.TtaEmployee
+
+@{
+    ViewData["Title"] = "Chi tiết nhân viên";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="my-2 text-center">@ViewData["Title"]</h2>
+            </div>
+
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpName)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(m => m.TtaEmpName)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpLevel)</dt>
+                    <dd class="col-sm-8">@Html.DisplayFor(m => m.TtaEmpLevel)</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpStartDate)</dt>
+                    <dd class="col-sm-8">@Model.TtaEmpStartDate?.ToString("dd/MM/yyyy")</dd>
+
+                    <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpStatus)</dt>
+                   <dd class="col-sm-10">
+                        @(Model.TtaEmpStatus == true ? "Show" : "Hide")
+                    </dd>
+
+                </dl>
+            </div>
+
+            <div class="card-footer text-center">
+                <a asp-action="TtaEdit" asp-route-TtaId="@Model.TtaEmpId" class="btn btn-primary mx-2">Sửa</a>
+                <a asp-action="TtaIndex" class="btn btn-secondary">Quay lại danh sách</a>
+            </div>
+        </div>
+    </div>
+</div>

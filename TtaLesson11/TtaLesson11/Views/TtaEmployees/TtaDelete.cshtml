@@ -1,0 +1,42 @@
+﻿@model TtaLesson11.Models.TtaEmployee
+
+@{
+    ViewData["Title"] = "Xoá nhân viên";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="TtaDelete">
+            <input type="hidden" asp-for="TtaEmpId" />
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <h2 class="my-2 text-center">@ViewData["Title"]</h2>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="text-danger text-center mb-3">Bạn có chắc chắn muốn xoá nhân viên này?</h5>
+                    <dl class="row">
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpName)</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(m => m.TtaEmpName)</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpLevel)</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(m => m.TtaEmpLevel)</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpStartDate)</dt>
+                        <dd class="col-sm-8">@Model.TtaEmpStartDate?.ToString("dd/MM/yyyy")</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.TtaEmpStatus)</dt>
+                        @(Model.TtaEmpStatus == true ? "Show" : "Hide")
+
+                    </dl>
+                </div>
+
+                <div class="card-footer text-center">
+                    <input type="submit" value="Xoá" class="btn btn-danger mx-2" />
+                    <a asp-action="TtaIndex" class="btn btn-secondary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
