@@ -1,0 +1,57 @@
+﻿@model ProjectImage.Models.TtaPost
+
+@{
+    ViewData["Title"] = "Create";
+    var images = ViewBag.Images as List<string>;
+}
+
+<h1>Create</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <!-- Dropdown chọn ảnh -->
+    <div class="form-group">
+        <label for="Image">Chọn ảnh</label>
+        <select asp-for="Image" class="form-control" id="imageSelect">
+            <option value="">-- Chọn ảnh --</option>
+            @foreach (var img in images)
+            {
+                <option value="/images/@img">@img</option>
+            }
+        </select>
+    </div>
+
+    <!-- Xem trước ảnh -->
+    <div class="form-group">
+        <img id="previewImage" src="" alt="Preview" style="max-width:200px; display:block; margin-top:10px;" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Content" class="control-label"></label>
+        <textarea asp-for="Content" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
+    </div>
+
+    <div class="form-group form-check">
+        <input asp-for="Status" class="form-check-input" />
+        <label asp-for="Status" class="form-check-label"></label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts {
+    <script>
+        const select = document.getElementById('imageSelect');
+        const preview = document.getElementById('previewImage');
+
+        select.addEventListener('change', function () {
+            preview.src = this.value;
+        });
+    </script>
+}
