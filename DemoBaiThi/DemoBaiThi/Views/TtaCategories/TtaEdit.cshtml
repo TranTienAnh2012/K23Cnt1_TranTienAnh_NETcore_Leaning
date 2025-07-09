@@ -1,0 +1,49 @@
+﻿@model DemoBaiThi.Models.Category
+
+@{
+    ViewData["Title"] = "Sửa Thông Tin Danh Mục Loại";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+        <form asp-action="TtaEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input type="hidden" asp-for="CategoryId" />
+
+            <div class="card shadow rounded-4">
+                <div class="card-header bg-primary text-white rounded-top-4">
+                    <h4 class="my-2">
+                        <i class="fas fa-edit me-2"></i>@ViewData["Title"]
+                    </h4>
+                </div>
+
+                <div class="card-body">
+                    <div class="form-group mb-3">
+                        <label asp-for="CategoryName" class="form-label">
+                            <i class="fas fa-tag me-1 text-secondary"></i> Tên Danh Mục
+                        </label>
+                        <input asp-for="CategoryName" class="form-control" />
+                        <span asp-validation-for="CategoryName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="card-footer d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save me-1"></i> Lưu
+                    </button>
+                    <a asp-action="TtaIndex" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Quay lại danh sách
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

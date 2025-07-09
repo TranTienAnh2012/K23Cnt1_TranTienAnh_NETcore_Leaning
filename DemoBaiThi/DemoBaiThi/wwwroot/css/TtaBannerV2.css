@@ -1,0 +1,28 @@
+﻿.Layout {
+    display: flex;
+    height: 200px;
+    gap: 10px;
+    overflow: hidden;
+}
+
+    .Layout > div {
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: flex 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+    }
+
+        .Layout > div:hover {
+            flex: 5;
+        }
+
+    .Layout img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s ease;
+    }
+
+    .Layout > div:hover img {
+        transform: scale(1.05);
+    }

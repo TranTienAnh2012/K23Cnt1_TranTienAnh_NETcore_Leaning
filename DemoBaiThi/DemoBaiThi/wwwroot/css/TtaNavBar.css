@@ -1,0 +1,102 @@
+﻿.navbar {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo */
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #007bff !important;
+    transition: color 0.3s ease;
+}
+
+    .navbar-brand:hover {
+        color: #0056b3 !important;
+        text-decoration: none;
+    }
+
+/* Menu giữa */
+.navbar-collapse {
+    justify-content: center !important;
+}
+
+/* Các mục menu */
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Link có icon và hiệu ứng đẹp */
+.nav-link {
+    position: relative;
+    font-weight: 500;
+    padding: 10px 15px;
+    color: #333 !important;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+    .nav-link:hover {
+        background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+        color: #007bff !important;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+    }
+
+/* Mobile layout */
+@media (max-width: 576px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+}
+/* Tìm kiếm mượt và hiện đại */
+.search-form {
+    max-width: 250px;
+}
+
+.search-input {
+    border-radius: 8px 0 0 8px; /* Bo nhẹ góc trái */
+    padding: 6px 15px;
+    border: 1px solid #ced4da;
+    border-right: none;
+    transition: all 0.3s ease;
+}
+
+    .search-input:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+    }
+
+.search-form .btn {
+    border-radius: 0 8px 8px 0; /* Bo nhẹ góc phải */
+    border: 1px solid #ced4da;
+    border-left: none;
+    background-color: white;
+    color: #007bff;
+}
+
+    .search-form .btn:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-form {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

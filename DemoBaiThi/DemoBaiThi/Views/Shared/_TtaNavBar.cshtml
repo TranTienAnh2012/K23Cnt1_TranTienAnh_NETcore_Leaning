@@ -1,0 +1,51 @@
+﻿<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <!-- Logo bên trái -->
+        <a class="navbar-brand d-flex align-items-center" asp-controller="TtaHome" asp-action="TtaIndex">
+            <i class="fas fa-graduation-cap me-2 text-primary"></i> Tran Tien Anh
+        </a>
+
+        <!-- Toggle mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav items và tìm kiếm -->
+        <div class="navbar-collapse collapse justify-content-between">
+            <!-- Các mục nav -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="TtaHome" asp-action="TtaIndex">
+                        <i class="fas fa-home me-1"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="TtaHome" asp-action="TtaAbout">
+                        <i class="fas fa-user me-1"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="TtaCategories" asp-action="TtaIndex">
+                        <i class="fas fa-list me-1"></i> Danh Sách Loại
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="TtaPublishers" asp-action="TtaIndex">
+                        <i class="fas fa-building me-1"></i> Nhà phát triển
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Thanh tìm kiếm -->
+            <form class="d-flex search-form" role="search">
+                <div class="input-group">
+                    <input class="form-control search-input" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>

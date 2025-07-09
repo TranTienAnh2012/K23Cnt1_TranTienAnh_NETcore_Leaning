@@ -1,0 +1,48 @@
+﻿@model DemoBaiThi.Models.Category
+
+@{
+    ViewData["Title"] = "Xóa Thể Loại";
+    Layout = "~/Views/Shared/_TtaLayout.cshtml";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-6">
+        <form asp-action="TtaDelete">
+            <div class="card shadow rounded-4 border border-danger">
+                <div class="card-header bg-danger text-white rounded-top-4">
+                    <h4 class="mb-0">
+                        <i class="fas fa-trash-alt me-2"></i>@ViewData["Title"]
+                    </h4>
+                    <p class="mt-2 mb-0">⚠️ Bạn có chắc chắn muốn xóa thể loại này không?</p>
+                </div>
+
+                <div class="card-body bg-light">
+                    <input type="hidden" asp-for="CategoryId" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-secondary">
+                            <i class="fas fa-id-badge me-1"></i> @Html.DisplayNameFor(model => model.CategoryId)
+                        </label>
+                        <div class="form-control bg-white">@Model.CategoryId</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-secondary">
+                            <i class="fas fa-tag me-1"></i> @Html.DisplayNameFor(model => model.CategoryName)
+                        </label>
+                        <div class="form-control bg-white">@Model.CategoryName</div>
+                    </div>
+                </div>
+
+                <div class="card-footer d-flex justify-content-between">
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash me-1"></i> Xóa
+                    </button>
+                    <a asp-action="TtaIndex" class="btn btn-outline-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Quay lại
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
